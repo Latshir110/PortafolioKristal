@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portafolio Kristel</title>
+    <title>Kristal´s Portfolio</title>
 
     <style>
         * {
@@ -88,7 +88,7 @@
             text-align: center;
         }
 
-        /* Videos */
+        /* Videos grid */
         .videos {
             display: flex;
             flex-wrap: wrap;
@@ -113,9 +113,11 @@
             padding: 60px 120px;
         }
 
-        .media-text img {
+        .media-text img,
+        .media-text video {
             width: 40%;
             max-width: 420px;
+            aspect-ratio: 16 / 9;
             border-radius: 12px;
         }
 
@@ -152,24 +154,18 @@
             }
 
             .media-text img,
+            .media-text video,
             .media-text .text {
                 width: 100%;
             }
-    @media (max-width: 768px) {
-    ...
-    .media-text video {
-        width: 40%;
-        max-width: 420px;
-        border-radius: 12px;
-    }
-}
+        }
     </style>
 </head>
 
 <body>
 
     <nav class="navbar">
-        <div class="logo"> Kristal´s Portfolio</div>
+        <div class="logo">Kristal´s Portfolio</div>
         <ul class="menu">
             <li>Start</li>
             <li>Games</li>
@@ -178,7 +174,7 @@
     </nav>
 
     <section class="images">
-        <img src="fotomia.jpg" alt="Team photo">
+        <img src="fotomia.jpg" alt="Profile photo">
         <img src="ubo.jpg" alt="University photo">
     </section>
 
@@ -192,39 +188,34 @@
         </p>
     </section>
 
-    <h2 class="section-title">Professional Expirence</h2>
+    <h2 class="section-title">Professional Experience</h2>
     <section class="media-text">
-        <img src="TRABAJO.jpg" alt="Project image">
+        <img src="TRABAJO.jpg" alt="Research project">
 
         <div class="text">
-            <h3>Applied Video Game Development Researcher | Universidad Bernardo O´Higgins</h3>
-              
+            <h3>Applied Video Game Development Researcher | Universidad Bernardo O’Higgins</h3>
             <p>
                 I worked in a research internship focused on the development and testing of a video game prototype,
-                conducting research on sensors applicable to the project and verifying its proper functionality in conjunction with a haptic vest, 
-                under the supervision of the course director, as part of a collaboration with University College of London (UCL).
-                
-                
+                conducting research on sensors applicable to the project and verifying its proper functionality
+                in conjunction with a haptic vest, as part of a collaboration with University College of London (UCL).
             </p>
         </div>
     </section>
-    </section>
 
-    <h2 class="section-title">My projects</h2>
+    <h2 class="section-title">My Projects</h2>
     <section class="media-text">
         <video src="Video.mp4" controls></video>
 
         <div class="text">
-            <h3>Video game with electromyogram </h3>
-              
+            <h3>Video Game with Electromyogram</h3>
             <p>
-           I present EMG SHOOTER, an innovative project that seeks to provide accessibility to people with manual disabilities in the world of video games. 
-            My idea is to create a shooter video game that is controlled by the intention of arm movement, using biological signals to detect movement.
-                
-                
+                EMG SHOOTER is an innovative project designed to provide accessibility for people with
+                manual disabilities. The game is controlled through arm movement intention, using
+                biological signals to detect and translate motion into gameplay actions.
             </p>
         </div>
     </section>
+
     <h2 class="section-title">Unity Learn</h2>
     <div class="card videos">
         <iframe src="https://www.youtube.com/embed/wkUP0AykwSs" allowfullscreen></iframe>
@@ -245,11 +236,6 @@
 
 </body>
 </html>
-
-
-
-
-
 
 
 
