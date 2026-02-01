@@ -99,8 +99,87 @@
             margin: 0 auto 60px auto;
         }
 
-        .videos iframe
+        .videos iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border-radius: 10px;
+        }
 
+        /* Info cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Portafolio Kristel</div>
+        <ul class="menu">
+            <li>Start</li>
+            <li>Games</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <section class="images">
+        <img src="team.jpg" alt="Team photo">
+        <img src="ubo.jpg" alt="University photo">
+    </section>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a video game programmer with a strong interest in innovation and the development
+            of interactive experiences. My main focus has been to integrate the physical world with
+            the digital world through video games, developing solutions that connect technology
+            with people in meaningful ways.
+        </p>
+    </section>
+
+    <h2 class="section-title">Unity Learn</h2>
+    <div class="card videos">
+        <iframe src="https://www.youtube.com/embed/wkUP0AykwSs"
+            title="Unity Learn video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <iframe src="https://www.youtube.com/embed/Ko-XA6eYvig"
+            title="Unity Learn video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <h2 class="section-title">Unreal Engine</h2>
+    <div class="card videos">
+        <iframe src="https://www.youtube.com/embed/wkUP0AykwSs"
+            title="Unreal Engine video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <iframe src="https://www.youtube.com/embed/Ko-XA6eYvig"
+            title="Unreal Engine video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <section class="cards">
+        <div class="card">Game Programmer · Unity</div>
+        <div class="card">Game Programmer · Unreal</div>
+        <div class="card">Interactive Experiences</div>
+    </section>
+
+</body>
+</html>
 
 
 
