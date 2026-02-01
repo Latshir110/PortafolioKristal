@@ -1,10 +1,1 @@
-![ANDRESBELLO](https://github.com/user-attachments/assets/f6479b05-dd12-48a2-9911-02a368b0c17a)
-![WEBUBO](https://github.com/user-attachments/assets/c2b28b01-2e50-46da-994e-64a42aef370c)
-![TRABAJO](https://github.com/user-attachments/assets/01a77d9d-df5f-4fa9-8615-72947bdcc46f)
-![MADIS](https://github.com/user-attachments/assets/b0ececa2-e5bc-4205-bfa2-9060d8e90df5)
-![LIDERAZGO](https://github.com/user-attachments/assets/435652eb-7449-481a-a578-fe371804d2e0)
-![KUWALA](https://github.com/user-attachments/assets/020b13f9-de14-4867-98fe-fb2bb9fbe1fc)
-![FRANCES](https://github.com/user-attachments/assets/08d5a144-fbc0-4f92-887e-b9bccfaedb39)
-![EMG](https://github.com/user-attachments/assets/4dc7c589-1507-4d40-967c-76eada61ec7b)
-![CHARLA](https://github.com/user-attachments/assets/a1851e3b-1953-44ab-a409-e52c02a8bbf3)
-![B2](https://github.com/user-attachments/assets/9b91d0f3-e804-412f-a8d5-ea603f10af03)
+
