@@ -1,174 +1,126 @@
-<html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0e0e0e;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.menu li:hover {
+    opacity: 1;
+}
+
+/* Images */
+.images {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.images img {
+    width: 45%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* About */
+.about {
+    text-align: center;
+    padding: 20px 80px;
+}
+
+.about h2 {
+    margin-bottom: 10px;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>KRISTAL ESPINOZA</title>
-  <style>
-
-    body {
-      font-family: monospace;
-      margin: 0;
-      padding: 0;
-      background-color:#000; /* Color de fondo */
-      color: #ffffff; /* Color de texto */
-      font-size: 24px;
-    
-    }
-/*titulo bordes*/
-    header {
-      background-color: #FFAFAF;
-      color:#0000;
-      padding: 30px;
-      text-align: center;
-      font-size: 24px;
-    }
-/*titulo letras*/
-    h1 {
-      margin: 0;
-      padding: 10px;
-      color:#000
-    }
-/*margen en pagina*/
-    main {
-      padding: 10px;
-    }
-/*bordes*/
-    section {
-      margin-bottom: 20px;
-      border: 3px solid #d21976;
-      border-radius: 5px;
-      padding: 30px;
-     
-    }
-/*texto de subtitulos*/
-    h2 {
-      color: #fcfcfc;
-      font-size: 24px;
-      margin-bottom: 20px;
-      background-color: #FF007F;
-      padding: 10px;
-     
-    }
-/*tamaño del texto sobre mi*/
-    p {
-
-      font-size: 24px;
-    }
-
-
-    .project1 {
-      display: flex;
-      align-items: center;
-      padding: 20px;
-      background-color: #333;
-      color: #ffffff;
-      margin-bottom: 20px;
-      border-radius: 5px;
-    }
-
-    .project2 {
-      display: flex;
-      align-items: center;
-      padding: 20px;
-      background-color: #333;
-      color: #ffffff;
-      margin-bottom: 20px;
-      border-radius: 5px;
-    }
-
-
-    .contact-info {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      border: 3px solid #FFAFAF;
-    }
-
-    .upload-section {
-      text-align: center;
-      margin-top: 20px;
-    } 
-  </style>
+    <meta charset="UTF-8">
+    <title>Unity Creators</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>KRISTAL ESPINOZA</h1>
-  </header>
 
-  <main>
-    <section>
-      <h2>Sobre mí</h2>
-      <p>Soy Kristal Espinoza. Estudiante de Ingenieria en Realidad Virtual y Diseño de Juegos digitalesen la Universidad Bernardo O'Higgins.</p>
-      <p>Soy programador de videojuegos y tengo un gran interés por la innovación y el desarrollo de experiencias interactivas. Mi principal objetivo ha sido integrar el mundo físico con el mundo digital a través de los videojuegos, desarrollando soluciones que conecten la tecnología con las personas de forma significativa.</p>
-     
+    <nav class="navbar">
+        <div class="logo">Unity Creators</div>
+        <ul class="menu">
+            <li>Start</li>
+            <li>Games</li>
+            <li>Events</li>
+            <li>News</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <section class="images">
+        <img src="img/team.jpg" alt="Team photo">
+        <img src="img/ubo.jpg" alt="University photo">
     </section>
 
-    <section>
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Unity 3D Engine
-Unreal Engine
-Python
-Bionic Tecnology
-Arduino
-Blender
-C++
-C#
-Haptic
-Game Design</li>
-        
-       
-      </ul>
-    </section>
-
-    <section>
-
-  <h2>Proyecto 1</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ko-XA6eYvig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-  </video>
-</div>
-        <p>El proyecto es un videojuego multijugador local creado con Unity, donde los jugadores compiten en una carrera con colisionadores en la pista. Se han desarrollado scripts para controlar el movimiento y acciones de los jugadores, así como cambios de cámara para añadir variedad visual</p>
-      </div>
-      <!-- Agrega más proyectos según sea necesario -->
-    </section>
-
-    
-  <h2>Proyecto 2</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/wkUP0AykwSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </video>
-</div>
+    <section class="about">
+        <h2>Who are we?</h2>
         <p>
-
-      <!-- Agrega más proyectos según sea necesario -->
+            We are the Unity Creators 2024–2025 Student Center of the
+            Virtual Reality Engineering and Digital Game Design program
+            at Bernardo O'Higgins University.
+        </p>
     </section>
 
-    <h2>Proyecto 3</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ko-XA6eYvig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-  </video>
-
-      <!-- Agrega más proyectos según sea necesario -->
-    </section>
-    
-    <h2>Mi Proyecto Propio Maquina de Goldbert</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/xktdvM7DjAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </video>
-        <!-- Agrega más proyectos según sea necesario -->
-      </section>
-
-    <section>
-      <h2>Contacto</h2>
-      <div class="contact-info">
-        <p>Correo electrónico: kristalesperanzaespinoza@gmail.com</p>
-        <p>Teléfono: +56942022914</p>
-        <p>Sitio web: <a href="file:///C:/Users/Kristy/Desktop/WEB/index.html#">https://latshir110.github.io/PortafolioKristal/#</a></p>
-      </div>
+    <section class="cards">
+        <div class="card">Diego Mendoza “President”</div>
+        <div class="card">Kristel Espinoza “Vicepresident”</div>
+        <div class="card">Lucas Soto “Treasurer”</div>
+        <div class="card">Yasmin Contreras “Secretary”</div>
+        <div class="card">Harmony Contreras “Coach”</div>
     </section>
 
-
-
-
-
+</body>
+</html>
 
 
 
