@@ -89,22 +89,23 @@
             text-align: center;
         }
 
-        /* Videos */
-        .videos {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            align-items: center;
-            max-width: 720px;
-            margin: 0 auto 60px auto;
-        }
+      
+       .videos {
+    display: flex;
+    flex-wrap: wrap;              
+    gap: 25px;
+    justify-content: center;      
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+}
 
-        .videos iframe {
-            width: 100%;
-            max-width: 560px;
-            height: 315px;
-            border-radius: 10px;
-        }
+.videos iframe {
+    width: 100%;
+    max-width: 500px;       
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+}
+
 
         /* Info cards */
         .cards {
@@ -180,6 +181,7 @@
 
 </body>
 </html>
+
 
 
 
