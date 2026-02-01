@@ -155,12 +155,14 @@
             .media-text .text {
                 width: 100%;
             }
-            .media-text video {
-    width: 40%;
-    max-width: 420px;
-    border-radius: 12px;
+    @media (max-width: 768px) {
+    ...
+    .media-text video {
+        width: 40%;
+        max-width: 420px;
+        border-radius: 12px;
+    }
 }
-        }
     </style>
 </head>
 
@@ -243,6 +245,7 @@
 
 </body>
 </html>
+
 
 
 
