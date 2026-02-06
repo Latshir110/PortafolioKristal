@@ -45,19 +45,6 @@
             opacity: 1;
         }
 
-        .images {
-            display: flex;
-            gap: 20px;
-            padding: 40px;
-            justify-content: center;
-        }
-
-        .images img {
-            width: 45%;
-            border-radius: 8px;
-            object-fit: cover;
-        }
-
         .images2 {
             display: flex;
             justify-content: center;
@@ -67,7 +54,6 @@
 
         .images2 img {
             width: 180px;
-            height: auto;
             border-radius: 50%;
         }
 
@@ -139,22 +125,24 @@
             line-height: 1.6;
         }
 
-        .media-text-left {
+        /* 👉 imagen a la derecha */
+        .media-text-right {
             display: flex;
             align-items: center;
-            gap: 30px;
+            gap: 40px;
             padding: 60px 120px;
+            flex-direction: row-reverse;
         }
 
-        .media-text-left img {
-            width: 260px;
-            height: auto;
+        .media-text-right img {
+            width: 40%;
+            max-width: 420px;
+            aspect-ratio: 16 / 9;
             border-radius: 12px;
-            object-fit: cover;
         }
 
-        .media-text-left .text {
-            flex: 1;
+        .media-text-right .text {
+            width: 60%;
         }
 
         .cards {
@@ -167,24 +155,22 @@
         @media (max-width: 768px) {
             .about,
             .media-text,
-            .media-text-left {
+            .media-text-right {
                 padding: 40px 30px;
             }
 
             .media-text,
-            .media-text-left {
+            .media-text-right {
                 flex-direction: column;
                 text-align: center;
             }
 
             .media-text img,
             .media-text video,
-            .media-text .text {
+            .media-text-right img,
+            .media-text .text,
+            .media-text-right .text {
                 width: 100%;
-            }
-
-            .media-text-left img {
-                width: 200px;
             }
         }
     </style>
@@ -192,89 +178,86 @@
 
 <body>
 
-    <nav class="navbar">
-        <div class="logo">Kristal´s Portfolio</div>
-        <ul class="menu">
-            <li>Start</li>
-            <li>Games</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+<nav class="navbar">
+    <div class="logo">Kristal´s Portfolio</div>
+    <ul class="menu">
+        <li>Start</li>
+        <li>Games</li>
+        <li>Contact</li>
+    </ul>
+</nav>
 
-    <section class="images2">
-        <img src="FOtoMia.jpg" alt="Profile photo">
-    </section>
+<section class="images2">
+    <img src="FOtoMia.jpg" alt="Profile photo">
+</section>
 
-    <section class="about">
-        <h2>About Me</h2>
+<section class="about">
+    <h2>About Me</h2>
+    <p>
+        I am a video game programmer with a strong interest in innovation and the development
+        of interactive experiences. My main focus has been to integrate the physical world with
+        the digital world through video games, developing solutions that connect technology
+        with people in meaningful ways.
+    </p>
+</section>
+
+<h2 class="section-title">Professional Experience</h2>
+<section class="media-text">
+    <img src="TRABAJO.jpg" alt="Research project">
+    <div class="text">
+        <h3>Applied Video Game Development Researcher | Universidad Bernardo O’Higgins</h3>
         <p>
-            I am a video game programmer with a strong interest in innovation and the development
-            of interactive experiences. My main focus has been to integrate the physical world with
-            the digital world through video games, developing solutions that connect technology
-            with people in meaningful ways.
+            I worked in a research internship focused on the development and testing of a video game prototype,
+            conducting research on sensors applicable to the project and verifying its proper functionality
+            in conjunction with a haptic vest.
         </p>
-    </section>
-
-    <h2 class="section-title">Professional Experience</h2>
-    <section class="media-text">
-        <img src="TRABAJO.jpg" alt="Research project">
-        <div class="text">
-            <h3>Applied Video Game Development Researcher | Universidad Bernardo O’Higgins</h3>
-            <p>
-                I worked in a research internship focused on the development and testing of a video game prototype,
-                conducting research on sensors applicable to the project and verifying its proper functionality
-                in conjunction with a haptic vest, as part of a collaboration with University College of London (UCL).
-            </p>
-        </div>
-    </section>
-
-    <h2 class="section-title">My Projects</h2>
-    <section class="media-text">
-        <video src="Video.mp4" controls></video>
-        <div class="text">
-            <h3>Video Game with Electromyogram</h3>
-            <p>
-                EMG SHOOTER is an innovative project designed to provide accessibility for people with
-                manual disabilities. The game is controlled through arm movement intention, using
-                biological signals to detect and translate motion into gameplay actions.
-            </p>
-        </div>
-    </section>
-    <section class="media-text">
-        <img src="Sin título.jpg" alt="Research project">
-        <div class="text">
-            <h3>Presentation of my research project: brain connection with video games</h3>
-            <p>
-                I was accepted to present my research on EEG in Video Games as a pitch at the R&D seedbed through Gamification,
-                organized by Sergio Covarrubias at Bernardo O'Higgins University. 
-            </p>
-        </div>
-    </section>
-
-    <section class="cards">
-        <div class="card">+56942022914</div>
-        <div class="card">kristalesperanzaespinoza@gmail.com</div>
-        <div class="card">Interactive Experiences</div>
-    </section>
-    <h2 class="section-title">Unity Learn</h2>
-    <div class="card videos">
-        <iframe src="https://www.youtube.com/embed/wkUP0AykwSs" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/Ko-XA6eYvig" allowfullscreen></iframe>
     </div>
+</section>
 
-    <h2 class="section-title">Unreal Engine</h2>
-    <div class="card videos">
-        <iframe src="https://www.youtube.com/embed/wkUP0AykwSs" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/Ko-XA6eYvig" allowfullscreen></iframe>
+<h2 class="section-title">My Projects</h2>
+<section class="media-text">
+    <video src="Video.mp4" controls></video>
+    <div class="text">
+        <h3>Video Game with Electromyogram</h3>
+        <p>
+            EMG SHOOTER is an innovative project designed to provide accessibility for people with
+            manual disabilities.
+        </p>
     </div>
+</section>
+
+<!-- 👇 ESTA es la que pedías -->
+<section class="media-text-right">
+    <img src="Sin título.jpg" alt="Presentation">
+    <div class="text">
+        <h3>Presentation of my research project: brain connection with video games</h3>
+        <p>
+            I was accepted to present my research on EEG in Video Games as a pitch at the R&D seedbed through Gamification,
+            organized by Sergio Covarrubias at Bernardo O'Higgins University.
+        </p>
+    </div>
+</section>
+
+<section class="cards">
+    <div class="card">+56942022914</div>
+    <div class="card">kristalesperanzaespinoza@gmail.com</div>
+    <div class="card">Interactive Experiences</div>
+</section>
+
+<h2 class="section-title">Unity Learn</h2>
+<div class="card videos">
+    <iframe src="https://www.youtube.com/embed/wkUP0AykwSs" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/Ko-XA6eYvig" allowfullscreen></iframe>
+</div>
+
+<h2 class="section-title">Unreal Engine</h2>
+<div class="card videos">
+    <iframe src="https://www.youtube.com/embed/wkUP0AykwSs" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/Ko-XA6eYvig" allowfullscreen></iframe>
+</div>
+
 </body>
 </html>
-
-
-
-
-
-
 
 
 
