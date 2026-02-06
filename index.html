@@ -17,7 +17,6 @@
             color: white;
         }
 
-        /* Navbar */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -46,25 +45,12 @@
             opacity: 1;
         }
 
-        /* Images */
         .images {
             display: flex;
             gap: 20px;
             padding: 40px;
             justify-content: center;
         }
-    .images2 {
-    display: flex;
-    justify-content: center; /* centra horizontal */
-    align-items: center;
-    padding: 20px;
-}
-
-.images2 img {
-    width: 180px;
-    height: auto;
-    border-radius: 50%;
-}
 
         .images img {
             width: 45%;
@@ -72,7 +58,19 @@
             object-fit: cover;
         }
 
-        /* About */
+        .images2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .images2 img {
+            width: 180px;
+            height: auto;
+            border-radius: 50%;
+        }
+
         .about {
             text-align: center;
             padding: 40px 120px;
@@ -86,13 +84,11 @@
             line-height: 1.6;
         }
 
-        /* Section titles */
         .section-title {
             text-align: center;
             margin: 70px 0 30px 0;
         }
 
-        /* Cards */
         .card {
             background: #1c1c1c;
             padding: 25px;
@@ -100,7 +96,6 @@
             text-align: center;
         }
 
-        /* Videos grid */
         .videos {
             display: flex;
             flex-wrap: wrap;
@@ -117,7 +112,6 @@
             border-radius: 10px;
         }
 
-        /* Media + Text section */
         .media-text {
             display: flex;
             align-items: center;
@@ -145,7 +139,24 @@
             line-height: 1.6;
         }
 
-        /* Info cards */
+        .media-text-left {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 60px 120px;
+        }
+
+        .media-text-left img {
+            width: 260px;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .media-text-left .text {
+            flex: 1;
+        }
+
         .cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -153,14 +164,15 @@
             padding: 40px;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .about,
-            .media-text {
+            .media-text,
+            .media-text-left {
                 padding: 40px 30px;
             }
 
-            .media-text {
+            .media-text,
+            .media-text-left {
                 flex-direction: column;
                 text-align: center;
             }
@@ -169,6 +181,10 @@
             .media-text video,
             .media-text .text {
                 width: 100%;
+            }
+
+            .media-text-left img {
+                width: 200px;
             }
         }
     </style>
@@ -187,7 +203,6 @@
 
     <section class="images2">
         <img src="FOtoMia.jpg" alt="Profile photo">
-  
     </section>
 
     <section class="about">
@@ -203,7 +218,6 @@
     <h2 class="section-title">Professional Experience</h2>
     <section class="media-text">
         <img src="TRABAJO.jpg" alt="Research project">
-
         <div class="text">
             <h3>Applied Video Game Development Researcher | Universidad Bernardo O’Higgins</h3>
             <p>
@@ -217,7 +231,6 @@
     <h2 class="section-title">My Projects</h2>
     <section class="media-text">
         <video src="Video.mp4" controls></video>
-
         <div class="text">
             <h3>Video Game with Electromyogram</h3>
             <p>
@@ -241,19 +254,17 @@
     </div>
 
     <h2 class="section-title">Professional Experience</h2>
-
-<section class="media-text-left">
-    <img src="TRABAJO.jpg" alt="Research project">
-
-    <div class="text">
-        <h3>Applied Video Game Development Researcher | Universidad Bernardo O’Higgins</h3>
-        <p>
-            I worked in a research internship focused on the development and testing of a video game prototype,
-            conducting research on sensors applicable to the project and verifying its proper functionality
-            in conjunction with a haptic vest, as part of a collaboration with University College of London (UCL).
-        </p>
-    </div>
-</section>
+    <section class="media-text-left">
+        <img src="TRABAJO.jpg" alt="Research project">
+        <div class="text">
+            <h3>Applied Video Game Development Researcher | Universidad Bernardo O’Higgins</h3>
+            <p>
+                I worked in a research internship focused on the development and testing of a video game prototype,
+                conducting research on sensors applicable to the project and verifying its proper functionality
+                in conjunction with a haptic vest, as part of a collaboration with University College of London (UCL).
+            </p>
+        </div>
+    </section>
 
     <section class="cards">
         <div class="card">+56942022914</div>
@@ -263,9 +274,6 @@
 
 </body>
 </html>
-
-
-
 
 
 
