@@ -111,6 +111,7 @@
             max-width: 420px;
             aspect-ratio: 16 / 9;
             border-radius: 12px;
+            object-fit: cover;
         }
 
         .media-text .text {
@@ -125,7 +126,6 @@
             line-height: 1.6;
         }
 
-        /* 👉 imagen a la derecha */
         .media-text-right {
             display: flex;
             align-items: center;
@@ -139,10 +139,28 @@
             max-width: 420px;
             aspect-ratio: 16 / 9;
             border-radius: 12px;
+            object-fit: cover;
         }
 
         .media-text-right .text {
             width: 60%;
+        }
+
+        /* 🔵 enlaces visibles */
+        .text a {
+            color: #4da3ff;
+            text-decoration: none;
+            font-weight: bold;
+            word-break: break-word;
+        }
+
+        .text a:hover {
+            text-decoration: underline;
+        }
+
+        /* 🖼 imagen vertical solo para WEBUBO */
+        .honor-vertical img {
+            aspect-ratio: 3 / 4;
         }
 
         .cards {
@@ -226,7 +244,6 @@
     </div>
 </section>
 
-
 <section class="media-text-right">
     <img src="Sin título.jpg" alt="Presentation">
     <div class="text">
@@ -238,43 +255,43 @@
     </div>
 </section>
 
-    </section>
-
 <h2 class="section-title">Honors</h2>
-<section class="media-text">
-    <img src="WEBUBO.jpg" alt="Research project">
+
+<section class="media-text honor-vertical">
+    <img src="WEBUBO.jpg" alt="WEB UBO">
     <div class="text">
         <h3>Recognition for my project EMG Shooter</h3>
         <p>
-          Featured in the official news section of the Virtual Reality Engineering and Digital Game Design program at University Bernardo O’Higgins, 
-            highlighting its contribution to accessibility through bionic technology.
-            https://admision.ubo.cl/emg-shooter-videojuego-con-tecnologia-bionica-que-revoluciona-la-accesibilidad
+            Featured in the official news section of the Virtual Reality Engineering and Digital Game Design program at
+            University Bernardo O’Higgins, highlighting its contribution to accessibility through bionic technology.<br><br>
+            <a href="https://admision.ubo.cl/emg-shooter-videojuego-con-tecnologia-bionica-que-revoluciona-la-accesibilidad" target="_blank">
+                View official publication
+            </a>
         </p>
     </div>
 </section>
-    
-    <section class="media-text-right">
-    <img src="KUWALA.jpg" alt="Presentation">
+
+<section class="media-text-right">
+    <img src="KUWALA.jpg" alt="Kuwala recognition">
     <div class="text">
-        <h3>Recognition for second place in the Game Jam Social Impact Gam</h3>
+        <h3>Second place – Game Jam Social Impact</h3>
         <p>
-            Issued by the Ministry of Education, UNESCO, Club Kuwala, Fondos Cultura, 
+            Issued by the Ministry of Education, UNESCO, Club Kuwala, Fondos Cultura,
             Movistar Game Club and University Gabriela Mistral.
         </p>
     </div>
 </section>
-    </section>
 
 <section class="media-text">
-    <img src="ANDRESBELLO.jpg" alt="Research project">
+    <img src="ANDRESBELLO.jpg" alt="UNAB conference">
     <div class="text">
         <h3>Certificate of communicative presentation</h3>
         <p>
-            I was a panelist at the Digital Games, Culture, and Video Games Conference UNAB. I gave a presentation on bionic video games, exploring interfaces between the body and machines.
+            I was a panelist at the Digital Games, Culture, and Video Games Conference UNAB,
+            presenting research on bionic video games and body-machine interfaces.
         </p>
     </div>
 </section>
-
 
 <h2 class="section-title">Unity Learn</h2>
 <div class="card videos">
@@ -287,19 +304,15 @@
     <iframe src="https://www.youtube.com/embed/wkUP0AykwSs" allowfullscreen></iframe>
     <iframe src="https://www.youtube.com/embed/Ko-XA6eYvig" allowfullscreen></iframe>
 </div>
+
 <section class="cards">
     <div class="card">+56942022914</div>
     <div class="card">kristalesperanzaespinoza@gmail.com</div>
     <div class="card">kristalespinoza_dev</div>
 </section>
+
 </body>
 </html>
-
-
-
-
-
-
 
 
 
